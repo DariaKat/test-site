@@ -169,6 +169,7 @@
     .slider-house {
       text-align: center;
       margin-bottom: 50px;
+      margin: 0 auto;
     }
   
     .picture-build__house h3 {
@@ -182,7 +183,7 @@
       display: inline-block;
       width: 830px;
       overflow: hidden;
-  
+    
       .image-comparison__before {
         position: absolute;
         width: 45%;
@@ -549,6 +550,7 @@
       #feedback_1 {
           display: none;
       }
+
   
       .photo__house {
           display: none;
@@ -673,13 +675,6 @@
         width: 100%;
     }
 
-    .image-comparison {
-        width: 100%;
-
-        .image-comparison__before {
-            width: 60%;
-        }
-    }
 
     .image-comparison__slider {
         left: 60%;
@@ -714,7 +709,57 @@
     .footer {
         display: none;
     }
-
+    .image-comparison {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      .image-comparison__before {
+        position: absolute;
+        width: 45%;
+        overflow: hidden;
+      }
+  
+      .image-comparison__image {
+        display: block;
+        object-fit: cover;
+      }
+    }
+  
+    .image-comparison__slider {
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      width: 2px;
+      height: 100%;
+      cursor: col-resize;
+      outline: none;
+      border: none;
+    }
+  
+    .image-comparison__slider::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 15px);
+      left: -23px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #ffffff url(../img/finger.png) no-repeat center;
+      border: 2px solid #fff;
+      background-size: 20px;
+    }
+  
+    .image-comprison__slider:hover,
+    .image-comprison__slider:focus,
+    .image-comprison__slider:hover::before,
+    .image-comprison__slider:focus::before {
+      background-color: #ccc;
+      outline: none;
+      border: none;
+    }
     .feedbacks {
         margin-top: 30px;
     }
@@ -723,6 +768,58 @@
 @media (max-width: 530px) {
     #brief-info {
         background: #ffffff;
+    }
+
+    .image-comparison {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      .image-comparison__before {
+        position: absolute;
+        width: 45%;
+        overflow: hidden;
+      }
+  
+      .image-comparison__image {
+        display: block;
+        object-fit: cover;
+      }
+    }
+  
+    .image-comparison__slider {
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      width: 2px;
+      height: 100%;
+      cursor: col-resize;
+      outline: none;
+      border: none;
+    }
+  
+    .image-comparison__slider::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 15px);
+      left: -23px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #ffffff url(../img/finger.png) no-repeat center;
+      border: 2px solid #fff;
+      background-size: 20px;
+    }
+  
+    .image-comprison__slider:hover,
+    .image-comprison__slider:focus,
+    .image-comprison__slider:hover::before,
+    .image-comprison__slider:focus::before {
+      background-color: #ccc;
+      outline: none;
+      border: none;
     }
 
     .carousel-video {
@@ -770,6 +867,10 @@
         #car4 {
             display: none;
         }
+    }
+
+    .feedbacks{
+      margin-top: 0;
     }
 
     #feedback_1 {

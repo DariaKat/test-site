@@ -70,8 +70,14 @@
   width: 70%;
 }
 
+.header .back__call {
+  text-decoration: none;
+}
+
 .header .phone {
   font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .header .office__hours {
@@ -390,6 +396,7 @@
 .main-page .slider-house {
   text-align: center;
   margin-bottom: 50px;
+  margin: 0 auto;
 }
 
 .main-page .picture-build__house h3 {
@@ -703,6 +710,12 @@
   margin: 0;
 }
 
+.carousel-main .carousel-cell img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .carousel-video {
   width: 540px;
 }
@@ -712,6 +725,12 @@
   margin-right: 10px;
   border-radius: 5px;
   counter-increment: carousel-cell;
+}
+
+.carousel-video .carousel-cell img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .carousel-video .static-banner {
@@ -774,6 +793,12 @@ ul li {
 
 ul li a {
   text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+  #brief-info {
+    padding: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -955,14 +980,6 @@ ul li a {
     width: 100%;
   }
 
-  .main-page .image-comparison {
-    width: 100%;
-  }
-
-  .main-page .image-comparison .image-comparison__before {
-    width: 60%;
-  }
-
   .main-page .image-comparison__slider {
     left: 60%;
   }
@@ -999,6 +1016,62 @@ ul li a {
     display: none;
   }
 
+  .main-page .image-comparison {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .main-page .image-comparison .image-comparison__before {
+    position: absolute;
+    width: 45%;
+    overflow: hidden;
+  }
+
+  .main-page .image-comparison .image-comparison__image {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .main-page .image-comparison__slider {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 2px;
+    height: 100%;
+    cursor: col-resize;
+    outline: none;
+    border: none;
+  }
+
+  .main-page .image-comparison__slider::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    left: -23px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffffff url(../img/finger.png) no-repeat center;
+    border: 2px solid #fff;
+    background-size: 20px;
+  }
+
+  .main-page .image-comprison__slider:hover,
+  .main-page .image-comprison__slider:focus,
+  .main-page .image-comprison__slider:hover::before,
+  .main-page .image-comprison__slider:focus::before {
+    background-color: #ccc;
+    outline: none;
+    border: none;
+  }
+
   .main-page .feedbacks {
     margin-top: 30px;
   }
@@ -1014,6 +1087,62 @@ ul li a {
 @media (max-width: 530px) {
   .main-page #brief-info {
     background: #ffffff;
+  }
+
+  .main-page .image-comparison {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .main-page .image-comparison .image-comparison__before {
+    position: absolute;
+    width: 45%;
+    overflow: hidden;
+  }
+
+  .main-page .image-comparison .image-comparison__image {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .main-page .image-comparison__slider {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 2px;
+    height: 100%;
+    cursor: col-resize;
+    outline: none;
+    border: none;
+  }
+
+  .main-page .image-comparison__slider::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 15px);
+    left: -23px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ffffff url(../img/finger.png) no-repeat center;
+    border: 2px solid #fff;
+    background-size: 20px;
+  }
+
+  .main-page .image-comprison__slider:hover,
+  .main-page .image-comprison__slider:focus,
+  .main-page .image-comprison__slider:hover::before,
+  .main-page .image-comprison__slider:focus::before {
+    background-color: #ccc;
+    outline: none;
+    border: none;
   }
 
   .main-page .carousel-video {
@@ -1060,6 +1189,10 @@ ul li a {
     display: none;
   }
 
+  .main-page .feedbacks {
+    margin-top: 0;
+  }
+
   .main-page #feedback_1 {
     display: none;
   }
@@ -1083,6 +1216,10 @@ ul li a {
 }
 
 @media (max-width: 1400px) and (min-width: 992px) {
+  .header .logo__slogan {
+    width: 70%;
+  }
+
   .header .navbar-brand {
     display: block;
     text-align: center;

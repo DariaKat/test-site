@@ -32,6 +32,10 @@
     .carousel-cell {
       width: 100%;
       margin: 0;
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -42,6 +46,10 @@
       margin-right: 10px;
       border-radius: 5px;
       counter-increment: carousel-cell;
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
     }
     .static-banner {
       position: absolute;

@@ -40,10 +40,11 @@ imageComparison('#image-comparison');
 $(window).on('load resize', function(){
     if ($(window).width() < 1400) {
         $('#brief-info').insertAfter('#project-house');
+        $('.row').removeClass('ms-3');
     }
     else {
         $('#brief-info').insertAfter('#menu');
-
+        $('.row').addClass('ms-3');
     }
 
     if ($(window).width() < 992) {
