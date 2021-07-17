@@ -1,0 +1,86 @@
+.brief-information {
+    font-family: "Roboto-Light";
+    background-color: #f7f7f7;
+    padding-left: 28px;
+  
+    .social__network {
+      margin-top: 25px;
+      margin-bottom: 70px;
+  
+      p {
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+  
+    .description__house {
+      margin-bottom: 45px;
+  
+      .characteristic {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+  
+        .characteristic__img {
+          margin-right: 20px;
+        }
+  
+        .characteristic__text {
+          p {
+            margin: 0 0;
+          }
+  
+          .name {
+            font-size: 18px;
+          }
+  
+          .size {
+            font-size: 18px;
+            font-family: "Roboto-Bold";
+          }
+        }
+      }
+    }
+  
+    .price {
+      margin-bottom: 25px;
+  
+      .price__text {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+  
+      .price__num {
+        font-size: 30px;
+        font-family: "Officina Serif";
+        color: #006022;
+      }
+    }
+  
+    .make__estimate {
+      margin-bottom: 55px;
+  
+      .button__estimate {
+        background: url(../img/tree-button.png);
+        background-size: cover;
+        box-shadow: 0 0 15px rgba(116, 116, 116, 0.5);
+        outline: none;
+        border: none;
+        font-size: 22px;
+        color: #ffffff;
+        font-family: "Officina Serif";
+        width: 230px;
+        height: 66px;
+      }
+    }
+  
+    .project__description {
+      margin-bottom: 10px;
+      font-size: 16px;
+  
+      p {
+        margin: 0;
+        padding-right: 10px;
+      }
+    }
+  }

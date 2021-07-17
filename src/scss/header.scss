@@ -1,0 +1,127 @@
+.header {
+    background: url(../img/background-tree.png);
+    background-size: cover;
+    padding: 0;
+    font-family: "Officina Serif";
+    font-size: 16px;
+    // width: 261px;
+  
+    .container-fluid {
+      padding: 0;
+    }
+  
+    .content {
+      width: 100%;
+    }
+  
+    .logo__slogan,
+    .information,
+    .back__call {
+      width: 40%;
+      text-align: center;
+      color: #ffffff;
+      font-size: 15px;
+      margin: 25px auto 78px auto;
+      text-transform: uppercase;
+    }
+  
+    .information,
+    .back__call {
+      width: 70%;
+    }
+  
+    .phone {
+      font-size: 20px;
+    }
+  
+    .office__hours {
+      font-family: "Roboto-Regular";
+      padding-top: 5px;
+      font-size: 12px;
+    }
+  
+    .menu {
+      li {
+        margin: 14px 0;
+      }
+  
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+  
+      a:hover {
+        color: #ebebeb;
+      }
+    }
+  
+    .navbar {
+      margin-bottom: 112px;
+    }
+  
+    .navbar-brand {
+      display: block;
+      text-align: center;
+      margin: 0;
+  
+      img {
+        margin-top: 20px;
+        width: 160px;
+        color: white;
+      }
+    }
+  
+    @media (max-width: 1400px) and (min-width: 992px) {
+      
+      .navbar-brand {
+        display: block;
+        text-align: center;
+  
+        img {
+          width: 80%;
+        }
+      }
+    }
+  
+    @media (max-width: 992px) {
+     
+      .logo__slogan,
+      .information,
+      .back__call {
+        display: none;
+      }
+  
+      .container-fluid {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+  
+        button {
+          border: none;
+        }
+      }
+  
+      .navbar {
+        margin: 0;
+        text-align: center;
+  
+        .menu {
+          width: 100%;
+          padding: 0px;
+        }
+      }
+  
+      .navbar-brand {
+        display: inline-block;
+        text-align: start;
+  
+        img {
+          margin: 5px 10px;
+          width: 60px;
+        }
+      }
+    }
+  }
