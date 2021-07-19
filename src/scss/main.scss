@@ -562,6 +562,33 @@
   
   }
   @media (max-width: 992px) {
+    .name__project{
+      font-size: 30px;
+    }
+
+    .breadcrumb__menu {
+      display: none ;
+    }
+
+    .delivery{
+      p{
+        font-size: 15px;
+        text-align: left;
+        padding-left: 15px;
+      }
+      #price {
+        padding-bottom: 10px;
+      }
+
+      #num-machin{
+        padding-bottom: 30px;
+      }
+
+      .group__cars {
+        padding-bottom: 50px;
+        margin: 0;
+      }
+    }
 
     .layout__house {
         display: flex;
@@ -766,9 +793,53 @@
 }
 
 @media (max-width: 530px) {
+
+  .name__project{
+    font-size: 30px;
+  }
     #brief-info {
         background: #ffffff;
     }
+
+    .flickity-page-dots {
+      bottom: -2px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .flickity-page-dots .dot {
+      height: 1px;
+      width: 500%;
+      border-radius: 0;
+  }
+.slider-aside{
+  padding:0;
+}
+
+  .carousel {
+    margin-bottom: 10px;
+  }
+
+  .carousel-mini {
+    width: 100%;
+    .carousel-cell {
+      width: 20%;
+      margin-right: 15px;
+    }
+  }
+
+  .carousel-main {
+    width: 100%;
+    .carousel-cell {
+      width: 100%;
+      margin: 0;
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 
     .image-comparison {
       position: relative;
@@ -787,6 +858,7 @@
       }
     }
   
+
     .image-comparison__slider {
       padding: 0;
       position: absolute;

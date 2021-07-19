@@ -808,6 +808,10 @@ ul li a {
     display: none;
   }
 
+  .header .navbar-toggler[aria-expanded=true] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='rgba(255, 255, 255, 0.95)' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.2)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z'/></svg>");
+  }
+
   .header .container-fluid {
     width: 100%;
     display: -webkit-box;
@@ -844,6 +848,33 @@ ul li a {
   .header .navbar-brand img {
     margin: 5px 10px;
     width: 60px;
+  }
+
+  .main-page .name__project {
+    font-size: 30px;
+  }
+
+  .main-page .breadcrumb__menu {
+    display: none;
+  }
+
+  .main-page .delivery p {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  .main-page .delivery #price {
+    padding-bottom: 10px;
+  }
+
+  .main-page .delivery #num-machin {
+    padding-bottom: 30px;
+  }
+
+  .main-page .delivery .group__cars {
+    padding-bottom: 50px;
+    margin: 0;
   }
 
   .main-page .layout__house {
@@ -1085,8 +1116,64 @@ ul li a {
 }
 
 @media (max-width: 530px) {
+  .main-page .name__project {
+    font-size: 30px;
+  }
+
   .main-page #brief-info {
     background: #ffffff;
+  }
+
+  .main-page .flickity-page-dots {
+    bottom: -2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .main-page .flickity-page-dots .dot {
+    height: 1px;
+    width: 500%;
+    border-radius: 0;
+  }
+
+  .main-page .slider-aside {
+    padding: 0;
+  }
+
+  .main-page .carousel {
+    margin-bottom: 10px;
+  }
+
+  .main-page .carousel-mini {
+    width: 100%;
+  }
+
+  .main-page .carousel-mini .carousel-cell {
+    width: 20%;
+    margin-right: 15px;
+  }
+
+  .main-page .carousel-main {
+    width: 100%;
+  }
+
+  .main-page .carousel-main .carousel-cell {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-page .carousel-main .carousel-cell img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .main-page .image-comparison {

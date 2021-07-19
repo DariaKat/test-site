@@ -50,9 +50,11 @@ $(window).on('load resize', function(){
     if ($(window).width() < 992) {
         $('.row').removeClass('ms-3');
         $('.feedbacks').insertAfter('.video-player');
+        $('#price').insertBefore('#num-machin');
     } else {
         $('.row').addClass('ms-3');
         $('.video-player').insertAfter('.feedbacks');
+        $('#price').insertAfter('.group__cars');
     }
 
 });
