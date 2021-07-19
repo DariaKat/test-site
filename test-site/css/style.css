@@ -528,6 +528,34 @@
   margin: 7px 0;
 }
 
+.main-page .video-player {
+  width: 540px;
+  height: 360px;
+}
+
+.main-page .video-player .carousel-cell {
+  background: url(../img/video-player.png) 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.main-page .video-player .carousel-cell .static-banner1 {
+  text-align: center;
+  padding-top: 25%;
+}
+
+.main-page .video-player .carousel-cell .static-banner2 {
+  color: #ffffff;
+  font-size: 16px;
+  padding-top: 20%;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.main-page .video-player .carousel-cell button {
+  background: transparent;
+  border: transparent;
+}
+
 .main-page .footer {
   color: #555555;
   padding: 0;
@@ -716,42 +744,6 @@
      object-fit: cover;
 }
 
-.carousel-video {
-  width: 540px;
-}
-
-.carousel-video .carousel-cell {
-  width: 100%;
-  margin-right: 10px;
-  border-radius: 5px;
-  counter-increment: carousel-cell;
-}
-
-.carousel-video .carousel-cell img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.carousel-video .static-banner {
-  position: absolute;
-  z-index: 1;
-  padding: 2px 20px;
-  font-size: 16px;
-  color: white;
-  pointer-events: none;
-}
-
-.carousel-video .static-banner1 {
-  right: 40%;
-  top: 45%;
-}
-
-.carousel-video .static-banner2 {
-  left: 0px;
-  bottom: 10px;
-}
-
 .flickity-button {
   background: transparent;
 }
@@ -848,6 +840,39 @@ ul li a {
   .header .navbar-brand img {
     margin: 5px 10px;
     width: 60px;
+  }
+
+  .main-page .picture-build__house {
+    padding: 0;
+  }
+
+  .main-page .video-player {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-page .video-player .carousel-cell {
+    background: url(../img/video-player.png) 100% 100% no-repeat;
+    background-size: cover;
+  }
+
+  .main-page .video-player .carousel-cell .static-banner1 {
+    text-align: center;
+    padding-top: 25%;
+  }
+
+  .main-page .video-player .carousel-cell .static-banner2 {
+    color: #ffffff;
+    font-size: 14px;
+    padding-top: 18%;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .main-page .video-player .carousel-cell button {
+    background: transparent;
+    border: transparent;
   }
 
   .main-page .name__project {
@@ -1303,6 +1328,11 @@ ul li a {
 }
 
 @media (max-width: 1400px) and (min-width: 992px) {
+  .header .back__call,
+  .header .information {
+    width: 100%;
+  }
+
   .header .logo__slogan {
     width: 70%;
   }
@@ -1480,5 +1510,33 @@ ul li a {
 
   .main-page .footer {
     display: none;
+  }
+
+  .main-page .video-player {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-page .video-player .carousel-cell {
+    background: url(../img/video-player.png) 100% 100% no-repeat;
+    background-size: cover;
+  }
+
+  .main-page .video-player .carousel-cell .static-banner1 {
+    text-align: center;
+    padding-top: 30%;
+  }
+
+  .main-page .video-player .carousel-cell .static-banner2 {
+    color: #ffffff;
+    font-size: 16px;
+    padding-top: 15%;
+    padding-left: 15px;
+    padding-bottom: 10px;
+  }
+
+  .main-page .video-player .carousel-cell button {
+    background: transparent;
+    border: transparent;
   }
 }

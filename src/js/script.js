@@ -37,7 +37,12 @@ function imageComparison(selector) {
 
 imageComparison('#image-comparison');
 
-$(window).on('load resize', function(){
+
+$(window).on('load resize', function () {
+    $('.button_class').click(function(){
+        alert('click');
+     })
+
     if ($(window).width() < 1400) {
         $('#brief-info').insertAfter('#project-house');
         $('.row').removeClass('ms-3');

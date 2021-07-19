@@ -39,40 +39,7 @@
     }
   }
 
-  .carousel-video {
-    width: 540px;
-    .carousel-cell {
-      width: 100%;
-      margin-right: 10px;
-      border-radius: 5px;
-      counter-increment: carousel-cell;
-      img{
-        width: 100%;
-        object-fit: cover;
-      }
-    }
-    .static-banner {
-      position: absolute;
-      // background: hsla(0, 0%, 0%, 0.3);
-      z-index: 1;
-      padding: 2px 20px;
-      font-size: 16px;
-      color: white;
-      pointer-events: none;
-    }
-    
-    .static-banner1 {
-      // vertical-align: middle;
-      right: 40%;
-      top: 45%;
-    }
-    
-    .static-banner2 {
-      left: 0px;
-      bottom: 10px;
-    }
-    
-  }
+  
 
   .flickity-button {
     background: transparent;

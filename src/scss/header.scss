@@ -80,6 +80,9 @@
     }
   
     @media (max-width: 1400px) and (min-width: 992px) {
+      .back__call, .information {
+        width: 100%;
+      }
       .logo__slogan {
         width: 70%;
       }
