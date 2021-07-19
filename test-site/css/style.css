@@ -1334,6 +1334,7 @@ ul li a {
 @media (max-width: 1400px) and (min-width: 992px) {
   .header .back__call,
   .header .information {
+    font-size: 14px;
     width: 100%;
   }
 
