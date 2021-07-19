@@ -37,11 +37,12 @@ function imageComparison(selector) {
 
 imageComparison('#image-comparison');
 
+$('.button_class').click(function(){
+    alert('click');
+ })
 
 $(window).on('load resize', function () {
-    $('.button_class').click(function(){
-        alert('click');
-     })
+   
 
     if ($(window).width() < 1400) {
         $('#brief-info').insertAfter('#project-house');
